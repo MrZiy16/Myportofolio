@@ -46,6 +46,7 @@
       <ul>
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Beranda</span></a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i><span>Tentang</span></a></li>
+        <li><a href="#certificates"><i class="bi bi-award navicon"></i><span>Sertifikat</span></a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Riwayat Hidup</span></a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portofolio</span></a></li>
         <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Layanan</span></a></li>
@@ -124,7 +125,144 @@ untuk berkontribusi pada produk digital yang berdampak</p>      </div><!-- End S
 
     </section><!-- /About Section -->
 
-    <!-- Stats Section -->
+ <!-- Certificates Section -->
+<section id="certificates" class="certificates section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Sertifikat</h2>
+    <p>Sertifikasi dan pelatihan profesional yang telah saya selesaikan</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row g-2">
+
+      <!-- Certificate 1 -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="certificate-item">
+          <div class="certificate-image-wrapper">
+            <img src="./assets/img/sertif-bangkit.png" alt="Bangkit Academy Certificate" class="certificate-image">
+            <div class="certificate-overlay">
+              <div class="certificate-info">
+                <h4>Bangkit Academy 2024</h4>
+                <p>Cloud Computing Cohort</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificate 2 -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="certificate-item">
+          <div class="certificate-image-wrapper">
+            <img src="./assets/img/sertif-backend.png" alt="Web Development Certificate" class="certificate-image">
+            <div class="certificate-overlay">
+              <div class="certificate-info">
+                <h4>Backend JavaScript</h4>
+                <p>Dicoding</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificate 3 -->
+    
+      <div class="col-12 text-center mt-4" data-aos="fade-up" data-aos-delay="400">
+        <a href="https://www.linkedin.com/in/ibnu-ziyad-0087a5286/" target="_blank" class="btn btn-primary">
+          <i class="bi bi-linkedin"></i> Lihat Semua Sertifikat di LinkedIn
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+</section><!-- /Certificates Section -->
+
+<style>
+  .certificate-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .certificate-item:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transform: translateY(-8px);
+  }
+
+  .certificate-image-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: #f5f5f5;
+    aspect-ratio: 16 / 9;
+  }
+
+  .certificate-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .certificate-item:hover .certificate-image {
+    transform: scale(1.05);
+  }
+
+  .certificate-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 102, 204, 0.85);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .certificate-item:hover .certificate-overlay {
+    opacity: 1;
+  }
+
+  .certificate-info {
+    color: white;
+  }
+
+  .certificate-info h4 {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .certificate-info p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.9;
+  }
+
+  @media (max-width: 768px) {
+    .certificate-image-wrapper {
+      aspect-ratio: 16 / 9;
+    }
+
+    .certificate-info h4 {
+      font-size: 16px;
+    }
+
+    .certificate-info p {
+      font-size: 12px;
+    }
+  }
+</style>
 
 
 <!-- Skills Section -->
