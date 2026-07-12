@@ -16,10 +16,17 @@
 
   function headerToggle() {
     document.querySelector('#header').classList.toggle('header-show');
+    document.body.classList.toggle('mobile-nav-active');
     headerToggleBtn.classList.toggle('bi-list');
     headerToggleBtn.classList.toggle('bi-x');
   }
   headerToggleBtn.addEventListener('click', headerToggle);
+
+  document.addEventListener('click', (e) => {
+    if (!document.body.classList.contains('mobile-nav-active')) return;
+    if (e.target.closest('#header') || e.target.closest('.header-toggle')) return;
+    headerToggle();
+  });
 
   /**
    * Hide mobile nav on same-page/hash links
